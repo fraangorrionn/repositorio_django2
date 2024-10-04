@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de monitores</title>
+</head>
+<body>
+    <h1>Monitores</h1>
+    <ul>
+        {% for Monitor in Monitores %}
+            <li>Nombre: {{ Monitor.nombre }} - Tipo: {{ Monitor.tipo }} - Sala: {{ Monitor.sala.username }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

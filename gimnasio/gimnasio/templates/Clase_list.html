@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de clases</title>
+</head>
+<body>
+    <h1>Clases</h1>
+    <ul>
+        {% for Clase in Clases %}
+        <li>Tipo: {{ Clase.tipo }} - Descripción: {{ Clase.descripcion }} - Fecha Inicio: {{ Clase.fecha_inicio }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de maquinas</title>
+</head>
+<body>
+    <h1>Maquinas</h1>
+    <ul>
+        {% for Maquina in Maquinas %}
+        <li>Tipo: {{ Maquina.tipo }} - Descripción: {{ Maquina.descripcion }} - Fecha Compra: {{ Maquina.fecha_compra }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
